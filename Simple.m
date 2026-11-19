@@ -67,11 +67,13 @@ plot(V/dm^3,p(:,iselect)/bara);
 xlabel('V [dm^3]');ylabel('p [bar]');               % Always add axis labels
 xlim([0 0.8]);ylim([0.5 50]);                      % Matter of taste
 set(gca,'XTick',[0:0.1:0.8],'XGrid','on','YGrid','on');        % I like specific axis labels. Matter of taste
-title({'pV-diagram','(with wrong Volume function btw)'})
+title({'pV-diagram'})
 subplot(2,1,2)
 loglog(V/dm^3,p(:,iselect)/bara);
 xlabel('V [dm^3]');ylabel('p [bar]');               % Always add axis labels
 xlim([0.02 0.8]);ylim([0 50]);                      % Matter of taste
 set(gca,'XTick',[0.02 0.05 0.1 0.2 0.5 0.8],...
     'YTick',[0.5 1 2 5 10 20 50],'XGrid','on','YGrid','on');        % I like specific axis labels. Matter of taste
-title({'pV-diagram','(with wrong Volume function btw)'})
+title({'pV-diagram'})
+
+
